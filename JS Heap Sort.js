@@ -16,24 +16,24 @@ const students = [
   
   // Function to maintain max-heap property
   function heapify(arr, n, i) {
-    let largest = i;
+    let max = i;
     const left = 2 * i + 1;
     const right = 2 * i + 2;
 
-    // If left child is larger than the root
-    if (left < n && arr[left].score > arr[largest].score) {
-      largest = left;
+    // If left child is greater than the root
+    if (left < n && arr[left].score > arr[max].score) {
+      max = left;
     }
 
-    // If right child is larger than the current largest
-    if (right < n && arr[right].score > arr[largest].score) {
-      largest = right;
+    // If right child is greater than the current largest
+    if (right < n && arr[right].score > arr[max].score) {
+      max = right;
     }
 
     // If largest is not root
-    if (largest !== i) {
-      swap(arr, i, largest);    // Swap root with the largest
-      heapify(arr, n, largest); // Recursively heapify the subtree
+    if (max !== i) {
+      swap(arr, i, max);    // Swapping root with the largest
+      heapify(arr, n, max); // Recursively heapify the subtree
     }
   }
   
