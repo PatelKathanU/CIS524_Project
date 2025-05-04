@@ -17,16 +17,16 @@
 - How to run and test the ccode:
   1) Java:
   - Compile the code:
-     javac filename.java
+     javac JavaHeapSort.java
   - Run the compiled code:
-     java filename
+     java JavaHeapSort
   - Expected outcome:
     Sorted students by score:
     [Kathan: 95, Preet: 88, Jaishil: 85, Saurin: 85, Harsh: 72]
 
   2) JavaScript:
   - Run the Script:
-     node filename.js
+     node JSHeapSort.js
   - Expected Outcome:
      Sorted students by score:
       [
